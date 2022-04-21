@@ -117,7 +117,7 @@ describe('CarFactory', () => {
 
 		describe('when many brands are provided', () => {
 			test('returns factory name with supported brand', () => {
-				expect(new CarFactory('Fiat Bielsko', ['fiat', 'Mercedes']).factoryName).toBe('Fiat Bielsko produces: Fiat, Mercedes');
+				expect(new CarFactory('Fiat Bielsko', ['fiat', 'Lancia']).factoryName).toBe('Fiat Bielsko produces: Fiat, Lancia');
 			});
 		})
 	})
